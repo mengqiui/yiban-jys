@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title class="i18n" name='title'>亿邦交易网站</title>
+    <meta id="i18n_pagename" content="index-common">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+<body>
+    <!-- 头部：固定 -->
+    <header class="header">
+        <nav class="headerNav">
+            <h1 class="headLogo"><a href="javascript:void(0)" style="color:#fff;">EBang.com</a></h1>
+            <ul class="navUL" style="">
+                <li><a href="#" class="i18n" name="nav_indexMsg"></a></li>
+                <li><a href="#" class="i18n" name="nav_tradeMsg"></a></li>
+                <li><a href="#" class="i18n" name="nav_loginMsg"></a></li>
+                <li><a href="#" class="i18n" name="nav_regMsg"></a></li>
+                <li id="setting"><i class="fa fa-cog"></i></li>
+                <div class="setBox">
+                    <p class="i18n" name="toggle_bg"></p>
+                    <div>
+                        <input class="radio" type="radio" value="bg-black" name="setBackground" id="bg_dark" checked/>
+                        <span class="radioInput"></span><label for="bg_dark">炫酷黑色</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" value="bg-white" name="setBackground" id="bg_white"/>
+                        <span class="radioInput"></span><label for="bg_white">简约白色</label>
+                    </div>
+                    <hr class="divide"/>
+                    <p class="i18n" name="language"></p>
+                    <div>
+                        <input class="radio" type="radio" value="zh-CN" name="setLangue" id="ch" checked/>
+                        <span class="radioInput"></span><label for="ch">简体中文</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" value="en" name="setLangue" id="en"/>
+                        <span class="radioInput"></span><label for="en">English</label>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="scroll-wrapper" style="">
+        <section class="fireworks">
+            <!--第一屏 烟花效果 -->
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="btnBox">
+                    <h1 class="i18n main-title" name="welcomeMsg"></h1>
+                    <button type="button" class="button i18n" name="btn_markets"></button>
+                    <button type="button" class="button i18n" name="nav_regMsg" style="margin-left: 10px;"></button>
+                </div>
+            </div>
+            <!-- 行情报表 -->
+            <div id="bgBox" class="bg-black">
+                <table id="dataTable" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th class="i18n" name="table_id"></th>
+                            <th class="i18n" name="table_name">name</th>
+                            <th>position</th>
+                            <th>salary</th>
+                            <th>start_date</th>
+                            <th>office</th>
+                            <th>extn</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/dataTables.min.js"></script>
+    <!-- 加载语言包文件 -->
+    <script src="js/jquery.i18n.properties.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/trading.js"></script>
+</body>
+</html>
